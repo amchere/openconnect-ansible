@@ -1,5 +1,5 @@
 [openconnect_server]
-142.54.160.100
+45.144.175.92
 
 [all:vars]
 ansible_connection=ssh
