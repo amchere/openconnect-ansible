@@ -213,14 +213,14 @@
           - iptables-persistent
           - netfilter-persistent
 
-    - name: POSTROUTING
-      ansible.builtin.iptables:
-        table: nat
-        chain: POSTROUTING
-        source: '{{ ocserv_network }}'
-        destination: '!{{ ocserv_network }}'
-        to_source: '{{ ethernet_ip }}'
-        jump: SNAT
+  - name: POSTROUTING
+    ansible.builtin.iptables:
+      table: nat
+      chain: POSTROUTING
+      source: '{{ ocserv_network }}'
+      destination: '!{{ ocserv_network }}'
+      to_source: '{{ ethernet_ip }}'
+      jump: SNAT
 
     - name: Allow incoming OpenVPN port
       ansible.builtin.iptables:
@@ -253,6 +253,7 @@
     tags:
       - install
       - iptables
+
 
   # ADD CLIENTS
   - name: Add new clients
