@@ -5,5 +5,4 @@
 ansible_connection=ssh
 ansible_user=root
 ansible_ssh_port=21131
-ansible_sudo_pass=PEJNBEdtP
 ansible_ssh_private_key_file=/home/ubuntu/.ssh/id_ecdsa
