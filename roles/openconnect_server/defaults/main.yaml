@@ -1,14 +1,13 @@
 ---
 openconnect_dir: "/etc/ocserv"
 openconnect_clients_dir: "/etc/ocserv/clients"
-ocserv_network: 10.18.18.0/24
-ocserv_port: 44535
-ethernet_ip: 10.10.10.22
+ocserv_network: 10.18.20.0/24
+ocserv_port: 44333
+ethernet_ip: 45.144.175.92
 dns: 8.8.8.8
-route_one_subnet: 172.17.0.0/255.255.255.0
 organization: "MyCompany"
 
-camouflage_secret: "login-access-secret"
+camouflage_secret: "i_wanna_a_chang"
 version: "1.3.0"
 config_url: "https://gitlab.com/openconnect/ocserv/-/raw/{{ version }}/doc/sample.config"
 local_creds_folder: "./creds/"
