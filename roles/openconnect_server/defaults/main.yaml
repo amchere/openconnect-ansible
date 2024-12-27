@@ -5,7 +5,7 @@ ocserv_network: 10.18.20.0/24
 ocserv_port: 44333
 ethernet_ip: 45.144.175.92
 dns: 8.8.8.8
-organization: "MyCompany"
+organization: "MyAnyConnect"
 
 camouflage_secret: "i_wanna_a_chang"
 version: "1.3.0"
